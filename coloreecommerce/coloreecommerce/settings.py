@@ -22,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-5-pl@^3!_wq1%45c0xagodj_130!*4&03w-1kwcoix0ksabq9q'
+#SECRET_KEY = 'django-insecure-5-pl@^3!_wq1%45c0xagodj_130!*4&03w-1kwcoix0ksabq9q'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -40,6 +40,8 @@ INSTALLED_APPS = [
     'allauth',
     'core',
     'allauth.account',
+    'crispy_forms',
+    'crispy_bootstrap4'
     'allauth.socialaccount',
     'allauth.socialaccount.providers.google',
     'crispy_forms',
@@ -135,6 +137,8 @@ SOCIALACCOUNT_PROVIDERS = {
 # CRISPY FORM
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap4"
+CRISPY_TEMPLATE_PACK = "bootstrap4"
 
 STRIPE_PUBLIC_KEY = 'pk_test_lX3r6OMjOU2yzFsNSHq6belT00EY82kZmH'
 STRIPE_SECRET_KEY = 'sk_test_tn0CTDaIJHUJyAqhsf39cfsC00LNjsqDnb'
